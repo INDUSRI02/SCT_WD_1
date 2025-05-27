@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skin Care Shop</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav>
+  <ul id="menu">
+    <li class="active" data-section="home">Home</li>
+    <li data-section="products">Products</li>
+    <li data-section="services">Our Services</li>
+    <li data-section="contact">Contact Us</li>
+    <li data-section="cart">Cart <span id="cart-count" style="display:none;">0</span></li>
+  </ul>
+</nav>
+
+<main>
+  <!-- HOME -->
+  <section id="home" class="section active-section">
+    <h1>Welcome to Skin Care Shop</h1>
+    <p>Discover our premium collection of moisturizers, sunscreens, serums, lip balms, SPF creams, night & day creams — everything to keep your skin glowing and healthy.</p>
+    <div class="hero-images">
+      <img src="C:\Users\indur\OneDrive\moisturizer.jpeg" alt="Moisturizer" title="Moisturizer" />
+      <img src="C:\Users\indur\Downloads\INDUSRI-Protofilo-main\indusri\sunscreen.webp"alt="Sunscreen" title="Sunscreen" />
+      <img src="C:\Users\indur\Downloads\INDUSRI-Protofilo-main\indusri\lipbalm.jpg" alt="Lip Balm" title="Lip Balm" />
+      <img src="C:\Users\indur\Downloads\INDUSRI-Protofilo-main\indusri\night cream.webp" alt="Night Cream" title="Night Cream" />
+      <img src="C:\Users\indur\Downloads\INDUSRI-Protofilo-main\indusri\spf cream.webp" alt="SPF Cream" title="SPF Cream" />
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products" class="section" style="display:none;">
+    <h2>Our Products</h2>
+    <div class="products" id="products-list">
+      <!-- Products inserted by JS -->
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section" style="display:none;">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Personalized Skin Care Consultations</li>
+      <li>Custom Product Recommendations</li>
+      <li>Free Skin Analysis with Purchase</li>
+      <li>Fast Shipping & Easy Returns</li>
+      <li>24/7 Customer Support</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section" style="display:none;">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" required placeholder="Your name" />
+      <label for="email">Email</label>
+      <input type="email" id="email" required placeholder="Your email" />
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" required placeholder="Your message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- CART -->
+  <section id="cart" class="section" style="display:none;">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p id="cart-empty-msg" class="empty">Your cart is empty.</p>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
